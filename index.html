@@ -8,8 +8,9 @@
 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/colorize.css">
+    <link rel="stylesheet" href="css/grid-system.css">
 </head>
-<body>
+<body id="TOP">
   <div class="fixed">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -32,13 +33,10 @@
         </div>
         <h3>Campus Station</h3>
         <h5>Enterpreneur Start From Campus</h5>
-        <a href="" class="white" style="text-decoration:none;">
-          <div class="bg-teal" style="height:40px;width:20%;border-radius:10px;">
-            <div style="padding:7%;marging:5px;">
-              <l class="white">Getting Started</l>
-            </div>
-          </div>
-        </a>
+        <button class="bg-teal white get-start" onclick="window.location.href='#'">
+          Get Stared
+        </button>
+
       </center>
     </div>
   </div>
@@ -46,28 +44,22 @@
   <div class="container">
     <center>
       <div class="tagline">
-        <h2>Top Campaign</h2>
+        Top Campaign
       </div>
     </center>
-    <table>
+    <div class="row">
+      <script>
+        function cetak(variable) {
+          document.write(variable)
+        }
+        for(i=1;i<13;i++){
+          cetak("<div class='grid-4'>");
+            cetak("<h1>H!</h1>");
+          cetak("</div>");
+        }
+      </script>
 
-      <tr>
-        <td>
-          <img src="" height="300px" alt="">
-          <h2>Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quaerat alias quos, repellendus possimus tempore mollitia 
-            odit tenetur assumenda animi sequi perferendis consectetur 
-            adipisci placeat hic vero deleniti voluptas? Nisi, unde.</p>
-          <button>anu</button>
-        </td>
-        <td>amnbsc</td>
-        <td>amnbsc</td>
-      </tr>
-      
-    </table>
+    </div>
   </div>
-
 </body>
 </html>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione sit voluptatum tempore corporis tenetur molestias illum hic cupiditate, fugiat, commodi voluptatem atque facilis. Rerum quos eos omnis voluptate maiores iure?
