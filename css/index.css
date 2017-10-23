@@ -144,3 +144,16 @@ tr td{
 .middle-v{
     margin-top: 20%;
 }
+
+.rounded{
+    border-radius: 50%;
+}
+
+.ico{
+    max-height: 100px;
+    height: 70px;
+}
+
+.pointer-hover:hover{
+    cursor: pointer;
+}
