@@ -75,7 +75,7 @@
           cetak("<div class='grid-4' style='padding-bottom:50px;'>");
 
             cetak("<div class='card' style='width:90%;padding-left:5%;'>");
-              cetak("<img src='https://ukietech.com/filemanager/BLOG/4_404.jpg' alt='image' style='width:100%;'>");
+              cetak("<img src='https://ukietech.com/filemanager/BLOG/4_404.jpg' alt='image/4_404.jpg' style='width:100%;'>");
               cetak("<div class='card-container'>");
                 cetak("<h4><b>"+nama[i-1]+"</b></h4>"); 
                 cetak("<p style='text-align:justify;font-size:small;'>"+tag+"</p>");
@@ -120,7 +120,7 @@
                   
                   var current = randomize(0,7);
                   cetak("<div class='card bg-white' style='width:90%;padding-left:5%;'>");
-                    cetak("<img src='https://ukietech.com/filemanager/BLOG/4_404.jpg' alt='image' style='width:100%;'>");
+                    cetak("<img src='https://ukietech.com/filemanager/BLOG/4_404.jpg' alt='image/4_404.jpg' style='width:100%;' onerror=\"this.src=\'image/4_404.jpg\';\">");
                     cetak("<div class='card-container'>");
                       if(current==past){
                         current = randomize(0,7)+1;
@@ -156,7 +156,7 @@
     <div class="container row">
       <center>
       <div class="grid-12" style="padding-top:20px;">
-        <img onclick="window.location.href='#'" class="rounded-item ico-style bg-white pointer-hover" src="https://hammerjs.github.io/assets/img/github-icon.png" alt"">
+        <img onclick="window.location.href='#'" class="rounded-item ico-style bg-white pointer-hover" src="https://hammerjs.github.io/assets/img/github-icon.png" alt="image/github-icon.png" onerror="this.src='image/github-icon.png';">
         <br><b>Github</b>
       </div>
       <div class="grid-12">
