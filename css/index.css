@@ -157,3 +157,7 @@ tr td{
 .pointer-hover:hover{
     cursor: pointer;
 }
+
+.footer{
+    padding-bottom: 20px;
+}
