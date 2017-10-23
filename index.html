@@ -48,13 +48,37 @@
       </div>
     </center>
     <div class="row">
+
       <script>
+        var nama = [
+          "Workshop Programming",
+          "Normalization City",
+          "Interrupted Network",
+          "Firebase Data Scrapper",
+          "Testing Simulation",
+          "Create Bot Hook.io",
+          "Network Management",
+          "Security Assignment"
+        ];
+
+        var tag = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ea accusamus aspernatur nulla recusandae aperiam vero, illum odio ullam ut, excepturi error debitis fugit ratione unde quibusdam odit eius tempore..."
+
         function cetak(variable) {
           document.write(variable)
         }
-        for(i=1;i<13;i++){
-          cetak("<div class='grid-4'>");
-            cetak("<h1>H!</h1>");
+
+        for(i=1;i<9;i++){
+          cetak("<div class='grid-3' style='padding-bottom:50px;'>");
+          cetak("<center>")
+            cetak("<div class='card' style='width:90%;'>");
+              cetak("<img src='https://ukietech.com/filemanager/BLOG/4_404.jpg' alt='image' style='width:100%;'>");
+              cetak("<div class='card-container'>");
+                cetak("<h4><b>"+nama[i]+"</b></h4>"); 
+                cetak("<p style='text-align:justify;'>"+tag+"</p>");
+                cetak("<a href='#' style='text-decoration:none;' class='teal'><b>Read More</b></a>")
+              cetak("</div>");
+            cetak("</div>");
+          cetak("</center>")
           cetak("</div>");
         }
       </script>
