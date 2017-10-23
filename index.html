@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/colorize.css">
     <link rel="stylesheet" href="css/grid-system.css">
+    <link rel="stylesheet" href="css/paralax.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/command.js"></script>
+
 </head>
 <body id="TOP">
   <div class="fixed">
@@ -61,29 +67,26 @@
           "Security Assignment"
         ];
 
-        var tag = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ea accusamus aspernatur nulla recusandae aperiam vero, illum odio ullam ut, excepturi error debitis fugit ratione unde quibusdam odit eius tempore..."
+        var tag = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ea accusamus aspernatur nulla recusandae aperiam vero, illum odio ullam ut, excepturi error debitis fugit ratione unde quibusdam odit eius tempore...";
 
-        function cetak(variable) {
-          document.write(variable)
-        }
+        for(i=1;i<7;i++){
+          cetak("<div class='grid-4' style='padding-bottom:50px;'>");
 
-        for(i=1;i<9;i++){
-          cetak("<div class='grid-3' style='padding-bottom:50px;'>");
-          cetak("<center>")
-            cetak("<div class='card' style='width:90%;'>");
+            cetak("<div class='card' style='width:90%;padding-left:5%;'>");
               cetak("<img src='https://ukietech.com/filemanager/BLOG/4_404.jpg' alt='image' style='width:100%;'>");
               cetak("<div class='card-container'>");
-                cetak("<h4><b>"+nama[i]+"</b></h4>"); 
+                cetak("<h4><b>"+nama[i-1]+"</b></h4>"); 
                 cetak("<p style='text-align:justify;'>"+tag+"</p>");
                 cetak("<a href='#' style='text-decoration:none;' class='teal'><b>Read More</b></a>")
               cetak("</div>");
             cetak("</div>");
-          cetak("</center>")
-          cetak("</div>");
+          
+            cetak("</div>");
         }
       </script>
 
     </div>
   </div>
+
 </body>
 </html>
