@@ -145,11 +145,11 @@ tr td{
     margin-top: 20%;
 }
 
-.rounded{
+.rounded-item{
     border-radius: 50%;
 }
 
-.ico{
+.ico-style{
     max-height: 100px;
     height: 70px;
 }
