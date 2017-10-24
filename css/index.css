@@ -28,6 +28,10 @@ ul {
     overflow: hidden;
     background-color: #3FB9A4;
 }
+ul li.dropdown {
+    float: left;
+    margin-left: 10px;
+}
 
 li {
     float: right;
